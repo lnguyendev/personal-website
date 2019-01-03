@@ -1,0 +1,85 @@
+@media only screen and (max-width: 1025px){
+	div#skills-pic img.element{
+		display: none;
+	}
+
+	img#all-skills{
+		display: block;
+	}
+
+	section.about{
+		width: 90%;
+	}
+
+	section.experience{
+		width: 90%;
+	}
+
+	section#contact div.row{
+		width: 90%;
+	}
+
+	section#contact div.social-media{
+		width: calc(100% / 3);
+	}
+}
+
+@media only screen and (max-width: 770px){
+	div.opl{
+		display: none;
+	}
+
+	div.nav-placeholder{
+		height: 100px;
+	}
+
+	nav.nav-bar{
+		height: auto;
+	}
+
+	.nav-bar .nav-container{
+		height: auto;
+		width: 95%;
+	}
+
+	div.name{
+		float: none;
+		text-align: center;
+	}
+
+	div.name h3{
+		margin-top: 0px;
+		padding-top: 5px;
+	}
+
+	div.nav-items{
+		float: none;
+		text-align: center;
+		margin-top: 0px;
+	}
+
+	div.nav-items a{
+		padding-bottom: 5px;
+	}
+}
+
+@media only screen and (max-width: 450px){
+	section.parallax h1{
+		font-size: 30px;
+		padding-top: 180px;
+	}
+
+	section#contact form#emailForm input.submit{
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 405px){
+	.nav-bar .nav-container{
+		width: 99%;
+	}
+
+	div.nav-items a{
+		padding: 8px;
+	}
+}
