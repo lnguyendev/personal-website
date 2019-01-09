@@ -67,7 +67,7 @@ $(document).ready(function() {
 
     /* Skills Animation part 2 */
 
-    var s_max = windowHeight / 3 + 600;
+    var s_max = windowHeight / 3 + 800;
 
     function move(p0, p1, s) {
       return Math.min(((-p0 + p1) / s_max) * s + p0, p1);
@@ -113,7 +113,10 @@ $(document).ready(function() {
     e.preventDefault();
 
     var target = this.hash;
+    console.log(target);
     var $target = $(target);
+
+    console.log($target);
 
     $('html, body')
       .stop()
@@ -124,22 +127,5 @@ $(document).ready(function() {
         900,
         'swing'
       );
-  });
-
-  /* Email Form */
-
-  var form = $('form#emailForm'),
-    formMessage = $('div#form-message'),
-    spinner = $('div#form-message img#spinner'),
-    url = '../php/mail.php';
-
-  spinner.hide();
-
-  $(form).on('submit', function(e) {
-    e.preventDefault();
-
-    var data = $(form).serialize();
-
-    email.init(formMessage, spinner, data, url);
   });
 });

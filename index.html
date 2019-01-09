@@ -4,9 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lam Nguyen</title>
-    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=ABeeZee|Bad+Script|Lato|Open+Sans|Pacifico" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="src/css/foundation.css" />
@@ -28,162 +26,225 @@
     <header class="workspace">
       <div class="stars">
       </div>
-      <h1>Hello, My name is Lam Nguyen!</h1>
+      <h1>
+        Hello, I'm <br />
+        <span>Lam Nguyen</span>
+      </h1>
       <img src="src/img/flat-desk.png">
     </header>
 
     <nav class="nav-bar">
       <section class="nav-container">
         <div class="name">
-          <h3><a href="index.html">lam nguyen</a></h3>
+          <h3>lam nguyen</h3>
         </div>
 
         <div class="nav-items">
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#experience">Experience</a>
-            <a href="#specialization">Services</a>
-            <a href="#contact">Contact</a>
+            <a href="#about">about</a>
+            <a href="#skills">skills</a>
+            <a href="#experience">experience</a>
+            <a href="#contact">contact</a>
         </div>
       </section>
     </nav>
 
     <div class="main-container">
       <section class="about" id="about">
-        <div class="row">
-          <div class="large-5 columns">
-            <div class="lam-img">
-              <img src="src/img/profile-pic.jpg" alt="Lam Nguyen">
-            </div>
+          <div class="about-container">
+              <div class="lam-img-container">
+                  <div class="lam-img"></div>
+              </div>
+              <div class="about-me-description">
+                  <h3>A little bit about me</h3>
+                  <p>My name is Lam Nguyen, and I currently live in Austin, Texas. I attended Purdue University where I received 
+                    my Bachelor's degree in Computer Science. I specialize in Web Development with a full-stack experience. I 
+                    enjoy creating interactive and dynamic web application with beautiful user interface. I am a passionate and 
+                    hard-working individual who strives to get better at what I do everyday. In my free time, I teach myself new 
+                    frameworks and dev tools to keep up with current trend. I am a laid-back person, and I love being active 
+                    such as playing sports and working out.
+                  </p>
+              </div>
           </div>
-
-          <div class="large-7 columns">
-            <h4>About Me</h4>
-            <p>My name is Lam Nguyen, and I am a student at Purdue University studying Computer Graphic Technology. I specialize in Web Development with a full-stack experience, I can work from  front-end to back-end development. I enjoy web development because I love creating interactive and dynamic database-driven web application with beautiful user interface. I am a passionate and hard-working individual who strives to get better at what I do everyday. Beside web development, another passion of mine is dancing, specifically Hip Hop dancing. I enjoy letting my emotion take over and explore my creativity through the art of dancing. I also love being active such as playing sports and working out. In my free time, I like to just sit back, relax, and play video games or hang out with friends.</p>
-          </div>
-        </div>
       </section>
 
       <section class="skills" id="skills">
         <div class="row">
-          <div class="large-6 columns">
-            <h4>Education</h4>
-            <p>
-              <strong>Bachelor of Science</strong> - May 2016<br>
-              <strong>Purdue University</strong> - West Lafayette, IN<br>
-              <strong>Major</strong>: Computer Graphic Technology<br>
-              <strong>Minor</strong>: Computer and Information Technology<br>
-              <strong>Cumulative GPA</strong>: 3.80 / 4.00
-            </p>
-            <br>
-            <h4>Technical Skills</h4>
-            <ul>
-              <li>HTML5 & CSS3</li>
-              <li>Javascript / jQuery / Backbone.js</li>
-              <li>SQL / MySQL</li>
-              <li>PHP & Laravel Framework</li>
-              <li>C# & ASP.NET Framework</li>
-            </ul>
-          </div>
-
           <div id="skills-pic" class="large-6 columns">
-            <img class="element" id="laptop" src="src/img/laptop.png">
-            <img class="element" id="smartphone" src="src/img/smartphone.png">
-            <img class="element" id="lamp" src="src/img/lamp.png">
-            <img class="element" id="pencil" src="src/img/pencil.png">
-            <img id="all-skills" src="src/img/skills-pic.png">
+            <div class="skills-pic-container">
+                <img class="element" id="laptop" src="src/img/laptop.png">
+                <img class="element" id="smartphone" src="src/img/smartphone.png">
+                <img class="element" id="lamp" src="src/img/lamp.png">
+                <img class="element" id="pencil" src="src/img/pencil.png">
+                <img id="all-skills" src="src/img/skills-pic.png">
+            </div>
           </div>
+          <div class="large-6 columns">
+              <h4>Technical Skills</h4>
+              <ul>
+                <li>HTML5 & CSS3</li>
+                <li>JavaScript (ES6)</li>
+                <li>Node.js</li>
+                <li>PHP</li>
+                <li>SQL / NoSQL</li>
+              </ul>
+              <br>
+              <h4>Frameworks & Tools</h4>
+              <div class="frameworks-tools">
+                <ul>
+                  <li>jQuery / Backbone.js</li>
+                  <li>React / Redux</li>
+                  <li>Express</li>
+                  <li>Laravel</li>
+                  <li>MySQL / MongoDB</li>
+                </ul>
+                <ul>
+                  <li>VS Code</li>
+                  <li>Git</li>
+                  <li>Webpack</li>
+                  <li>Heroku</li>
+                  <li>Command Line Tools</li>
+                </ul>
+              </div>
+            </div>
         </div>
       </section>
 
       <section class="experience" id="experience">
-        <h4>Experience</h4>
-        <div class="timeline">
-          <div class="timeline-block">
-            <div class="timeline-circle">
-              <p>May 2015<br>
-                -<br>
-                Oct. 2015
-              </p>
-            </div>
+        <div class="experience-container">
+            <h4>Experience</h4>
+            <div class="timeline">
+                <div class="timeline-block">
+                    <div class="timeline-circle">
+                      <p>June 2016<br>
+                        -<br>
+                        Present
+                      </p>
+                    </div>
+        
+                    <div class="timeline-content">
+                      <h4 class="job-title">
+                        <strong><a href="http://www.netsuite.com/portal/home.shtml" target="blank">Oracle | NetSuite</a></strong>
+                        <span class="job-location">Austin, TX</span>
+                      </h4>
+                      <h3>PS Senior Web Developer / Consultant</h3>
+                      <p> Proficient in NetSuite's state-of-the-art ERP system and their eCommerce platform, SuiteCommerce 
+                          Advanced. Employ Backbone JS framework in the front end along with other libraries like Underscore and 
+                          Handlebars to write maintainable and reusable code. Utilize Sass and Bootstrap for efficient, responsive, 
+                          and precise UI design. Node.js is used in the backend to interface with the NetSuite ERP system to 
+                          persist and read data. Make use of Gulp.js for local development and bundling assets for deployments. 
+                          Effectively work in small team to deliver custom eCommerce solution to clients leveraging the 
+                          SuiteCommerce Advanced framework. Practice Agile methodology to collaboratively execute sprints in a 
+                          timely, quality fashion.</p>
+                      <p>
+                        <strong>The Datto Project</strong><br>
+                        NetSuite's eCommerce platform, SuiteCommerce Advanced, is known for building online retail stores. 
+                        With the Datto project, that I got a chance to be apart of for a year, we implemented a custom solution 
+                        that utilizes the brand new feature from NetSuite ERP called SuiteBilling. We created a web application that 
+                        manages user's subscriptions to Datto's main services. From the application, user can choose to subscribe 
+                        to any service they prefer and manage it there. Billing procedure goes through the web application and 
+                        get processed in the NetSuite ERP. One of the big features that I got to work on is the promotional code 
+                        system. Users can stack their promo codes by entering multiple of them, and depending on the services 
+                        that they have subscribed in their cart, the promo codes would apply accordingly and provide them with 
+                        discounts.
+                      </p>
+                      <p>
+                        <strong>Launching the First SuiteSuccess Product</strong><br>
+                        During my time here at Oracle | NetSuite, I had the chance to work with a team called SuiteSuccess for 
+                        a short period of time. We delivered the first ever SuiteSuccess for B2B Commerce product. From the first 
+                        day of customer's engagement to the day of Go-Live, it only took us 17 days to launch our client's 
+                        online retail store. They had their first online transaction through the site within that first month. 
+                        That was our business model, to take our client live as soon as possible, so they can save money and make 
+                        money faster. A typical SuiteCommerce Advanced project would take 2 months at minimum to launch; we were 
+                        able to do it 1/4 the time of that.
+                      </p>
+                    </div>
+                  </div>
 
-            <div class="timeline-content">
-              <h4><strong>Indiana Design Consortium</strong> - Lafayette, IN</h4>
-              <h3>Web Developer Intern</h3>
-              <p>Developed websites on Wordpress for multiple clients such as Indiana Packers and Myte Corporation. Utilized SEO methodologies to drive traffic to clients' websites. Implemented layouts using best web practices to enhance User Experience, as well as to optimize page load time. Expanded my web development skill-sets by programming in PHP, Javascript, HTML, and CSS.</p>
+              <div class="timeline-block">
+                <div class="timeline-circle">
+                  <p>May 2015<br>
+                    -<br>
+                    Oct. 2015
+                  </p>
+                </div>
+    
+                <div class="timeline-content">
+                  <h4 class="job-title">
+                    <strong><a href="https://idc-marketing.com/" target="blank">Indiana Design Consortium</a></strong>
+                    <span class="job-location">Lafayette, IN</span>
+                  </h4>
+                  <h3>Web Developer Intern</h3>
+                  <p>Developed websites on Wordpress for multiple clients such as Indiana Packers and Myte Corporation. 
+                    Utilized SEO methodologies to drive traffic to clients' websites. Implemented layouts using best web 
+                    practices to enhance User Experience, as well as to optimize page load time. Expanded my web development 
+                    skill-sets by programming in PHP, Javascript, HTML, and CSS.</p>
+                </div>
+              </div>
+    
+              <div class="timeline-block">
+                <div class="timeline-circle">
+                  <p>May 2014<br>
+                    -<br>
+                    May 2015
+                  </p>
+                </div>
+    
+                <div class="timeline-content">
+                  <h4 class="job-title">
+                    <strong><a href="https://www.intellihire.com/" target="blank">Intellihire</a></strong>
+                    <span class="job-location">Lafayette, IN</span>
+                  </h4>
+                  <h3>Front-End Developer</h3>
+                  <p>Successfully managed and maintained company websites, as well as implemented new designs to company’s 
+                    sale site and IntelliHire's Applicant Tracking System platform, by programming in HTML5, CSS3, and JavaScript.</p>
+                  <p>Created graphics for web developing purpose across both company’s sale site and portal site by utilizing 
+                    extensive knowledge and experience in Adobe Creative Suite: Photoshop, InDesign, and Illustrator.</p>
+                </div>
+              </div>
+    
+              <div class="timeline-block">
+                <div class="timeline-circle">
+                  <p>Jan. 2014<br>
+                    -<br>
+                    May 2015
+                  </p>
+                </div>
+    
+                <div class="timeline-content">
+                  <h4 class="job-title">
+                    <strong><a href="http://www.studioblafayette.com/" target="blank">Studio B</a></strong>
+                    <span class="job-location">Lafayette, IN</span>
+                  </h4>
+                  <h3>Hip Hop Dance Instructor</h3>
+                  <p>Managed and taught 20+ kids ranging from 10-18 years old, as well as 
+                      prepared them for a recital in the spring, by teaching advanced Hip Hop 
+                      choreography and spreading awareness about the art of Hip Hop dancing.</p>
+                </div>
+              </div>
             </div>
-          </div>
-
-          <div class="timeline-block">
-            <div class="timeline-circle">
-              <p>May 2014<br>
-                -<br>
-                May 2015
-              </p>
-            </div>
-
-            <div class="timeline-content">
-              <h4><strong>Intellihire</strong> - Lafayette, IN</h4>
-              <h3>Front-End Developer</h3>
-              <p>Successfully managed and maintained company websites, as well as implemented new designs to company’s sale site and IntelliHire's Applicant Tracking System platform, by programming in HTML5, CSS3, and JavaScript.<br><br>
-                Created graphics for web developing purpose across both company’s sale site and portal site by utilizing extensive knowledge and experience in Adobe Creative Suite: Photoshop, InDesign, and Illustrator.</p>
-            </div>
-          </div>
-
-          <div class="timeline-block">
-            <div class="timeline-circle">
-              <p>Jan. 2014<br>
-                -<br>
-                May 2015
-              </p>
-            </div>
-
-            <div class="timeline-content">
-              <h4><strong>Studio B</strong> - Lafayette, IN</h4>
-              <h3>Hip Hop Dance Instructor</h3>
-              <p>Managed and taught 20+ kids ranging from 10-18 years old, as well as 
-                  prepared them for a recital in the spring, by teaching advanced Hip Hop 
-                  choreography and spread awareness about the art of Hip Hop dancing.</p>
-            </div>
-          </div>
-
-          <div class="timeline-block">
-            <div class="timeline-circle">
-              <p>May 2010<br>
-                -<br>
-                Aug. 2012
-              </p>
-            </div>
-
-            <div class="timeline-content">
-              <h4><strong>GomezPhoneStore</strong> - Westfield, IN</h4>
-              <h3>Customer Service</h3>
-              <p>Communicated with over 50 customers everyday about company’s 
-                  products and helped customers resolve any issue through effective 
-                  communication and interpersonal skills.</p>
-            </div>
-          </div>
         </div>
       </section>
 
       <section class="parallax" id="parallax">
-        <h1>Innovate&nbsp;&nbsp;Creativity</h1>
+        <h2>"Imagination is more <br>
+          important than knowledge."</h2>
+        <h6>- Albert Einstein</h6>
       </section>
 
-      <section class="specialization" id="specialization">
+      <section class="specialization" id="contact">
         <div class="row">
           <h4>Specializations</h4>
-          <div class="large-4 columns">
+          <div class="large-4 medium-4 columns">
             <img src="src/img/graphic_design.png" alt="Graphic Design Icon">
             <h5>Graphic Design</h5>
             <p>Logo design,</br>brand design, flyer,</br>infographic.</p>
           </div>
-          <div class="large-4 columns">
+          <div class="large-4 medium-4 columns">
             <img src="src/img/web_design.png" alt="Web Design Icon">
             <h5>Web Design</h5>
             <p>Website development,</br>responsive design,</br>UI/UX design.</p>
           </div>
-          <div class="large-4 columns">
+          <div class="large-4 medium-4 columns">
             <img src="src/img/app_dev.png" alt="App Development Icon">
             <h5>Web App Development</h5>
             <p>Database-driven</br>application, single-page</br>application.</p>
@@ -191,22 +252,20 @@
         </div>
       </section>
 
-      <section class="contact" id="contact">
-        <div class="row">
-          <h4>Contact Me</h4>
-          <div class="large-12 columns">
+      <section class="contact">
+        <div class="contact-container">
+            <h4>Let's Connect!</h4>
             <div class="row">
-              <div class="large-4 columns social-media">
+              <div class="large-4 medium-4 small-4 columns social-media">
                 <a target="blank" href="https://www.linkedin.com/profile/preview?vpa=pub&locale=en_US"><i class="fa fa-linkedin-square"></i></a>
               </div>
-              <div class="large-4 columns social-media">
-                <a target="blank" href="https://github.com/lahmnguyen"><i class="fa fa-github-square"></i></a>
+              <div class="large-4 medium-4 small-4 columns social-media">
+                <a target="blank" href="https://github.com/lnguyendev"><i class="fa fa-github-square"></i></a>
               </div>
-              <div class="large-4 columns social-media">
-                <a href="mailto:lahmdev@gmail.com"><i class="fa fa-envelope-square"></i></a>
+              <div class="large-4 medium-4 small-4 columns social-media">
+                <a href="mailto:lnguyendev@gmail.com"><i class="fa fa-envelope-square"></i></a>
               </div>
             </div>
-          </div>
         </div>
       </section>
 
