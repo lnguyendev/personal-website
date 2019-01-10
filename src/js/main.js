@@ -23,9 +23,9 @@ var SpecializationAnimation = {
     this.wScroll = wScroll;
 
     this.elementsArray = [
-      { selector: $('section.specialization div.row div.columns img') },
-      { selector: $('section.specialization div.row div.columns h5') },
-      { selector: $('section.specialization div.row div.columns p') }
+      { selector: $('section.specialization div.columns div.column img') },
+      { selector: $('section.specialization div.columns div.column h5') },
+      { selector: $('section.specialization div.columns div.column p') }
     ];
 
     var self = this;

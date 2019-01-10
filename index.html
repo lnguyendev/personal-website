@@ -7,9 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=ABeeZee|Bad+Script|Lato|Open+Sans|Pacifico" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
-    <link rel="stylesheet" href="src/css/foundation.css" />
-    <link rel="stylesheet" href="src/css/global.css" />
-    <link rel="stylesheet" href="src/css/responsive.css" />
+    <link rel="stylesheet" href="./dist/css/index.css">
 
     <script src="src/js/modernizr.js"></script>
     <script src="src/js/jquery.js"></script>
@@ -68,42 +66,44 @@
       </section>
 
       <section class="skills" id="skills">
-        <div class="row">
-          <div id="skills-pic" class="large-6 columns">
-            <div class="skills-pic-container">
-                <img class="element" id="laptop" src="src/img/laptop.png">
-                <img class="element" id="smartphone" src="src/img/smartphone.png">
-                <img class="element" id="lamp" src="src/img/lamp.png">
-                <img class="element" id="pencil" src="src/img/pencil.png">
-                <img id="all-skills" src="src/img/skills-pic.png">
+        <div class="skills-container">
+          <div class="columns">
+            <div id="skills-pic" class="column">
+              <div class="skills-pic-container">
+                  <img class="element" id="laptop" src="src/img/laptop.png">
+                  <img class="element" id="smartphone" src="src/img/smartphone.png">
+                  <img class="element" id="lamp" src="src/img/lamp.png">
+                  <img class="element" id="pencil" src="src/img/pencil.png">
+                  <img id="all-skills" src="src/img/skills-pic.png">
+              </div>
             </div>
-          </div>
-          <div class="large-6 columns">
-              <h4>Technical Skills</h4>
-              <ul>
-                <li>HTML5 & CSS3</li>
-                <li>JavaScript (ES6)</li>
-                <li>Node.js</li>
-                <li>PHP</li>
-                <li>SQL / NoSQL</li>
-              </ul>
-              <br>
-              <h4>Frameworks & Tools</h4>
-              <div class="frameworks-tools">
+            <div class="column">
+                <h4>Technical Skills</h4>
                 <ul>
-                  <li>jQuery / Backbone.js</li>
-                  <li>React / Redux</li>
-                  <li>Express</li>
-                  <li>Laravel</li>
-                  <li>MySQL / MongoDB</li>
+                  <li>HTML5 & CSS3</li>
+                  <li>JavaScript (ES6)</li>
+                  <li>Node.js</li>
+                  <li>PHP</li>
+                  <li>SQL / NoSQL</li>
                 </ul>
-                <ul>
-                  <li>VS Code</li>
-                  <li>Git</li>
-                  <li>Webpack</li>
-                  <li>Heroku</li>
-                  <li>Command Line Tools</li>
-                </ul>
+                <br>
+                <h4>Frameworks & Tools</h4>
+                <div class="frameworks-tools">
+                  <ul>
+                    <li>jQuery / Backbone.js</li>
+                    <li>React / Redux</li>
+                    <li>Express</li>
+                    <li>Laravel</li>
+                    <li>MySQL / MongoDB</li>
+                  </ul>
+                  <ul>
+                    <li>VS Code</li>
+                    <li>Git</li>
+                    <li>Webpack</li>
+                    <li>Heroku</li>
+                    <li>Command Line Tools</li>
+                  </ul>
+                </div>
               </div>
             </div>
         </div>
@@ -232,22 +232,24 @@
       </section>
 
       <section class="specialization" id="contact">
-        <div class="row">
+        <div class="specialization-container">
           <h4>Specializations</h4>
-          <div class="large-4 medium-4 columns">
-            <img src="src/img/graphic_design.png" alt="Graphic Design Icon">
-            <h5>Graphic Design</h5>
-            <p>Logo design,</br>brand design, flyer,</br>infographic.</p>
-          </div>
-          <div class="large-4 medium-4 columns">
-            <img src="src/img/web_design.png" alt="Web Design Icon">
-            <h5>Web Design</h5>
-            <p>Website development,</br>responsive design,</br>UI/UX design.</p>
-          </div>
-          <div class="large-4 medium-4 columns">
-            <img src="src/img/app_dev.png" alt="App Development Icon">
-            <h5>Web App Development</h5>
-            <p>Database-driven</br>application, single-page</br>application.</p>
+          <div class="columns">
+            <div class="column">
+              <img src="src/img/graphic_design.png" alt="Graphic Design Icon">
+              <h5>Graphic Design</h5>
+              <p>Logo design,</br>brand design, flyer,</br>infographic.</p>
+            </div>
+            <div class="column">
+              <img src="src/img/web_design.png" alt="Web Design Icon">
+              <h5>Web Design</h5>
+              <p>Website development,</br>responsive design,</br>UI/UX design.</p>
+            </div>
+            <div class="column">
+              <img src="src/img/app_dev.png" alt="App Development Icon">
+              <h5>Web App Development</h5>
+              <p>Database-driven</br>application, single-page</br>application.</p>
+            </div>
           </div>
         </div>
       </section>
@@ -255,14 +257,14 @@
       <section class="contact">
         <div class="contact-container">
             <h4>Let's Connect!</h4>
-            <div class="row">
-              <div class="large-4 medium-4 small-4 columns social-media">
+            <div class="columns is-mobile">
+              <div class="column social-media">
                 <a target="blank" href="https://www.linkedin.com/profile/preview?vpa=pub&locale=en_US"><i class="fa fa-linkedin-square"></i></a>
               </div>
-              <div class="large-4 medium-4 small-4 columns social-media">
+              <div class="column social-media">
                 <a target="blank" href="https://github.com/lnguyendev"><i class="fa fa-github-square"></i></a>
               </div>
-              <div class="large-4 medium-4 small-4 columns social-media">
+              <div class="column social-media">
                 <a href="mailto:lnguyendev@gmail.com"><i class="fa fa-envelope-square"></i></a>
               </div>
             </div>
@@ -270,10 +272,6 @@
       </section>
 
     </div>
-    
-    <script src="src/js/foundation.min.js"></script>
-    <script>
-      $(document).foundation();
-    </script>
+
   </body>
 </html>

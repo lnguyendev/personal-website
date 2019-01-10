@@ -5,12 +5,27 @@
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js"
+    "dev": "webpack-dev-server --mode development --open",
+    "build": "webpack --mode production",
+    "start": "node app.js",
+    "heroku-postbuild": "webpack -p"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.4"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "bulma": "^0.7.2",
+    "css-loader": "^2.1.0",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "file-loader": "^3.0.1",
+    "node-sass": "^4.11.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "url-loader": "^1.1.2",
+    "webpack": "^4.28.1",
+    "webpack-cli": "^3.2.1",
+    "webpack-dev-server": "^3.1.14"
+  }
 }

@@ -67,7 +67,7 @@ $(document).ready(function() {
 
     /* Skills Animation part 2 */
 
-    var s_max = windowHeight / 3 + 800;
+    var s_max = windowHeight / 3 + 650;
 
     function move(p0, p1, s) {
       return Math.min(((-p0 + p1) / s_max) * s + p0, p1);

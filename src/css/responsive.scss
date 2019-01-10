@@ -1,0 +1,116 @@
+@media only screen and (max-width: 1025px) {
+  .about {
+    .lam-img {
+      margin: 0 auto;
+    }
+  }
+
+  #skills-pic {
+    .element {
+      display: none;
+    }
+  }
+
+  #all-skills {
+    display: block;
+  }
+
+  .nav-bar {
+    .nav-container {
+      width: 90%;
+    }
+  }
+
+  .about {
+    width: 90%;
+  }
+
+  .skills {
+    .columns {
+      width: 90%;
+    }
+  }
+
+  .experience {
+    .experience-container {
+      width: 90%;
+    }
+  }
+
+  .specialization .specialization-container,
+  .contact .contact-container {
+    width: 90%;
+  }
+
+  #contact {
+    .social-media {
+      width: calc(100% / 3);
+    }
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .opl {
+    display: none;
+  }
+
+  .nav-placeholder {
+    height: 100px;
+  }
+
+  .nav-bar {
+    height: auto;
+
+    .nav-container {
+      height: auto;
+      width: 95%;
+    }
+  }
+
+  .name {
+    float: none;
+    text-align: center;
+
+    h3 {
+      margin-top: 0px;
+      padding-top: 5px;
+    }
+  }
+
+  .nav-items {
+    float: none;
+    text-align: center;
+    margin-top: 0px;
+
+    a {
+      padding-bottom: 5px;
+    }
+  }
+
+  .about-container {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .parallax {
+    h1 {
+      font-size: 30px;
+      padding-top: 180px;
+    }
+  }
+}
+
+@media only screen and (max-width: 405px) {
+  .nav-bar {
+    .nav-container {
+      width: 99%;
+    }
+  }
+
+  .nav-items {
+    a {
+      padding: 8px;
+    }
+  }
+}
