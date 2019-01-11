@@ -10,13 +10,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="./dist/css/index.css">
-
-    <script src="src/js/modernizr.js"></script>
-    <script src="src/js/jquery.js"></script>
-
-    <script src="src/js/header.js"></script>
-    <script src="src/js/main.js"></script>
-    <script src="src/js/init.js"></script>
+    <script src="./dist/js/bundle.js"></script>
 
   </head>
   <body>
@@ -25,12 +19,14 @@
     
     <header class="workspace">
       <div class="stars">
+        <img class="stars-1" src="./src/img/stars.png" alt="Stars-1">
+        <img class="stars-2" src="./src/img/stars.png" alt="Stars-2">
       </div>
       <h1>
         Hello, I'm <br />
         <span>Lam Nguyen</span>
       </h1>
-      <img src="src/img/flat-desk.png">
+      <img class="flat-desk-img" src="src/img/flat-desk.png">
     </header>
 
     <nav class="nav-bar">
@@ -52,7 +48,9 @@
       <section class="about" id="about">
           <div class="about-container">
               <div class="lam-img-container">
-                  <div class="lam-img"></div>
+                  <div class="lam-img">
+                    <img src="./src/img/profile-pic.jpg" alt="Lam Nguyen">
+                  </div>
               </div>
               <div class="about-me-description">
                   <h3>A little bit about me</h3>
@@ -79,7 +77,7 @@
                   <img id="all-skills" src="src/img/skills-pic.png">
               </div>
             </div>
-            <div class="column">
+            <div class="column is-5">
                 <h4>Technical Skills</h4>
                 <ul>
                   <li>HTML5 & CSS3</li>
@@ -113,7 +111,7 @@
 
       <section class="experience" id="experience">
         <div class="experience-container">
-            <h4>Experience</h4>
+            <h2>Experience</h2>
             <div class="timeline">
                 <div class="timeline-block">
                     <div class="timeline-circle">

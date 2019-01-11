@@ -1,3 +1,10 @@
+var headJS = require('./header');
+var mainJS = require('./main');
+var BannerAnimation = headJS.BannerAnimation;
+var StickyNav = headJS.StickyNav;
+var ExperienceAnimation = mainJS.ExperienceAnimation;
+var SpecializationAnimation = mainJS.SpecializationAnimation;
+
 $(document).ready(function() {
   var navOffset = $('nav.nav-bar').offset().top;
   var windowHeight = $(window).height();
@@ -67,7 +74,7 @@ $(document).ready(function() {
 
     /* Skills Animation part 2 */
 
-    var s_max = windowHeight / 3 + 650;
+    var s_max = windowHeight / 3 + 700;
 
     function move(p0, p1, s) {
       return Math.min(((-p0 + p1) / s_max) * s + p0, p1);
@@ -113,10 +120,7 @@ $(document).ready(function() {
     e.preventDefault();
 
     var target = this.hash;
-    console.log(target);
     var $target = $(target);
-
-    console.log($target);
 
     $('html, body')
       .stop()
