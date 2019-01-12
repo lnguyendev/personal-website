@@ -37,7 +37,7 @@ module.exports = {
     },
 
     animate: function(elements) {
-      if (this.wScroll > $('section.parallax').offset().top - 100) {
+      if (this.wScroll > $('section.parallax').offset().top) {
         elements.each(function(element) {
           elements
             .eq(element)

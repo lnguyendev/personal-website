@@ -66,6 +66,17 @@
 
   .about-container {
     flex-direction: column;
+
+    .about-me-description {
+      padding: 0px;
+      padding-top: 25px;
+    }
+  }
+
+  .workspace-flat {
+    .workspace-flat-container {
+      width: 100%;
+    }
   }
 
   .frameworks-tools {
@@ -105,6 +116,16 @@
     h1 {
       font-size: 30px;
       padding-top: 180px;
+    }
+  }
+
+  .contact {
+    .contact-container {
+      width: 100%;
+
+      i {
+        font-size: 20px;
+      }
     }
   }
 }

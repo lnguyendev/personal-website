@@ -1,3 +1,12 @@
+$pink: #e26867;
+$teal: #7db29b;
+$purple: #4a3f60;
+$grey: #959595;
+$dark-grey: #737373;
+$light-grey: #f5f5f5;
+$super-light-grey: #f9f9f9;
+$white: #fff;
+
 body {
   margin: 0;
   padding: 0;
@@ -23,7 +32,7 @@ h6 {
 /*Header Section*/
 
 .workspace {
-  background-color: #4a3f60;
+  background-color: $purple;
   position: relative;
   height: 100vh;
   width: 100%;
@@ -54,7 +63,7 @@ h6 {
 
   h1 {
     margin: 0;
-    color: #fff;
+    color: $white;
     text-align: center;
     font-weight: 100;
     font-size: 30px;
@@ -108,7 +117,7 @@ h6 {
 .name {
   h3 {
     font-family: 'Pacifico', cursive;
-    color: #e26867;
+    color: $pink;
     font-size: 30px;
   }
 }
@@ -119,7 +128,7 @@ h6 {
     padding: 10px;
     padding-bottom: 0px;
     position: relative;
-    color: #e26867;
+    color: $pink;
   }
 }
 
@@ -130,7 +139,7 @@ h6 {
   height: 3px;
   bottom: -5px;
   left: 0;
-  background-color: #e26867;
+  background-color: $pink;
   visibility: hidden;
   transform: scaleX(0);
   transition: all 0.3s ease-in-out 0s;
@@ -144,7 +153,7 @@ h6 {
 /*Main Container*/
 .main-container {
   width: 100%;
-  background-color: #fff;
+  background-color: $white;
   clear: both;
 }
 
@@ -161,7 +170,7 @@ h6 {
 /*About Section*/
 .about {
   width: 70%;
-  padding: 30px 0px;
+  padding: 50px 0px;
   margin: 0 auto;
 
   .lam-img {
@@ -173,14 +182,15 @@ h6 {
   }
 
   .about-me-description h3 {
-    color: #7db29b;
+    color: $teal;
     margin: 0;
     margin-bottom: 10px;
-    font-size: 25px;
+    font-size: 35px;
+    font-weight: bold;
   }
 
   .about-me-description p {
-    color: #959595;
+    color: $grey;
     margin: 0;
     line-height: 35px;
     font-size: 15px;
@@ -191,27 +201,38 @@ h6 {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  .about-me-description {
+    padding: 0px 25px;
+  }
 }
 
-.about-me-description {
-  padding: 0px 25px;
+/* Workspace Flat Section */
+.workspace-flat {
+  border-bottom: solid 20px #605866;
+
+  .workspace-flat-container {
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: -13px;
+  }
 }
 
 /*Skills Section*/
 .skills {
   width: 100%;
-  background-color: #7cb29b;
-  color: #fff;
+  background-color: $teal;
+  color: $white;
+  border-bottom: solid 5px darken($color: $teal, $amount: 10);
 
   .columns {
     width: 70%;
     margin: 0 auto;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 50px 0px;
   }
 
   h4 {
-    color: #5c8875;
+    color: darken($color: $teal, $amount: 18);
     font-size: 20px;
   }
 
@@ -222,10 +243,6 @@ h6 {
     list-style-type: square;
     font-size: 13px;
     font-weight: 600;
-  }
-
-  p strong {
-    color: #dddddd;
   }
 }
 
@@ -278,9 +295,9 @@ h6 {
 
 /*Experience Section*/
 .experience {
-  padding: 20px 0px;
+  padding: 50px 0px;
   width: 100%;
-  background: #f5f5f5;
+  background: $light-grey;
 
   .experience-container {
     width: 70%;
@@ -289,8 +306,10 @@ h6 {
 }
 
 .experience-container > h2 {
-  color: #e26867;
-  font-size: 25px;
+  color: $pink;
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 30px;
 }
 
 .timeline {
@@ -309,7 +328,7 @@ h6 {
   left: 50px;
   height: 100%;
   width: 2px;
-  background: #e26867;
+  background: $pink;
 }
 
 .timeline-block {
@@ -325,8 +344,8 @@ h6 {
 }
 
 .timeline-circle {
-  background-color: #e26867;
-  border: solid 4px #f5f5f5;
+  background-color: $pink;
+  border: solid 4px $light-grey;
   padding: 15px;
   float: left;
   z-index: 100;
@@ -335,7 +354,7 @@ h6 {
   border-radius: 41px;
 
   p {
-    color: white;
+    color: $white;
     font-size: 10px;
     margin: 0;
     text-align: center;
@@ -343,14 +362,14 @@ h6 {
 }
 
 .timeline-content {
-  background-color: #f9f9f9;
+  background-color: $super-light-grey;
   position: relative;
   margin-left: 130px;
   padding: 20px;
   box-shadow: 1px 1px 5px #dddddd;
 
   .job-location {
-    color: #e26867;
+    color: $pink;
     font-size: 15px;
   }
 }
@@ -363,7 +382,7 @@ h6 {
   height: 0;
   width: 0;
   border: 10px solid transparent;
-  border-right: 10px solid #e26867;
+  border-right: 10px solid $pink;
 }
 
 .experience {
@@ -374,19 +393,19 @@ h6 {
     justify-content: space-between;
 
     a {
-      color: #e26867;
+      color: $pink;
       font-size: 18px;
     }
 
     a:hover {
-      color: #dc8988;
+      color: lighten($color: $pink, $amount: 10);
     }
   }
 }
 
 .timeline-content {
   h3 {
-    color: #737373;
+    color: $dark-grey;
     font-size: 15px;
     font-weight: 600;
     margin: 0;
@@ -396,15 +415,13 @@ h6 {
 
 .timeline-content {
   p {
-    color: #949494;
+    color: $grey;
     font-size: 15px;
     margin-bottom: 15px;
-  }
-}
 
-.timeline-content {
-  strong {
-    color: #949494;
+    strong {
+      color: $grey;
+    }
   }
 }
 
@@ -433,7 +450,7 @@ h6 {
 
   h2 {
     font-weight: 100;
-    color: #fff;
+    color: $white;
     text-shadow: 1px 1px 5px #828282;
     margin: 0;
     padding: 20px;
@@ -442,7 +459,7 @@ h6 {
   }
 
   h6 {
-    color: #fff;
+    color: $white;
     text-shadow: 1px 1px 5px #828282;
     margin: 0;
   }
@@ -451,23 +468,22 @@ h6 {
 /* Specialization Section */
 .specialization {
   width: 100%;
-  background-color: #e26867;
-  min-height: 382px;
+  background-color: $pink;
+  padding: 50px 0px;
 }
 
 .specialization-container {
   width: 70%;
   margin: 0 auto;
-  padding-top: 20px;
-  padding-bottom: 20px;
   text-align: center;
 }
 
 .specialization .specialization-container h4 {
   color: #984342;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   text-align: center;
-  font-size: 25px;
+  font-size: 35px;
+  font-weight: bold;
 }
 
 .specialization .specialization-container img {
@@ -482,12 +498,13 @@ h6 {
 }
 
 .specialization .specialization-container h5 {
-  color: #fff;
+  color: $white;
   font-weight: bold;
+  margin-bottom: 10px;
 }
 
-.specialization .columns .column p {
-  color: #fff;
+.specialization .columns .column li {
+  color: $white;
 }
 
 .specialization .columns .column h5,
@@ -511,10 +528,11 @@ h6 {
 /* Contact Section */
 .contact {
   width: 100%;
-  min-height: 260px;
+  min-height: 230px;
+  padding: 50px 0px;
   display: flex;
   align-items: center;
-  background-color: #446cb3;
+  background-color: darken($color: $pink, $amount: 3);
 
   .contact-container {
     width: 70%;
@@ -523,24 +541,37 @@ h6 {
 
     h4 {
       text-transform: uppercase;
-      color: #244682;
+      color: $white;
       margin: 0;
       margin-bottom: 30px;
       font-size: 25px;
+      opacity: 0.8;
     }
 
     i {
-      font-size: 70px;
-      color: #244682;
-      transition: all 0.4s ease-in-out;
+      font-size: 30px;
+      background-color: transparent;
+      color: $white;
+      border: solid 2px $white;
+      padding: 15px;
+      border-radius: 40px;
+      opacity: 0.8;
+      -webkit-transform: rotate(-360deg);
+      -moz-transform: rotate(-360deg);
+      -o-transform: rotate(-360deg);
+      -ms-transform: rotate(-360deg);
+      transform: rotate(-360deg);
+      transition: all 0.2s ease-in-out;
     }
 
     i:hover {
-      -webkit-transform: translateY(
-        10px
-      ); /* Ch <36, Saf 5.1+, iOS, An =<4.4.4 */
-      -ms-transform: translateY(10px); /* IE 9 */
-      transform: translateY(10px);
+      -webkit-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+      transform: rotate(360deg);
+      color: $pink;
+      background-color: $white;
     }
   }
 }

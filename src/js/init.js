@@ -74,7 +74,7 @@ $(document).ready(function() {
 
     /* Skills Animation part 2 */
 
-    var s_max = windowHeight / 3 + 700;
+    var s_max = windowHeight / 3 + 1200;
 
     function move(p0, p1, s) {
       return Math.min(((-p0 + p1) / s_max) * s + p0, p1);
@@ -126,7 +126,7 @@ $(document).ready(function() {
       .stop()
       .animate(
         {
-          scrollTop: $target.offset().top - 70
+          scrollTop: $target.offset().top - 69
         },
         900,
         'swing'

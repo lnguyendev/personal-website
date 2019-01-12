@@ -2157,7 +2157,7 @@ h6 {
 /*About Section*/
 .about {
   width: 70%;
-  padding: 30px 0px;
+  padding: 50px 0px;
   margin: 0 auto; }
   .about .lam-img {
     width: 300px;
@@ -2169,7 +2169,8 @@ h6 {
     color: #7db29b;
     margin: 0;
     margin-bottom: 10px;
-    font-size: 25px; }
+    font-size: 35px;
+    font-weight: bold; }
   .about .about-me-description p {
     color: #959595;
     margin: 0;
@@ -2180,22 +2181,29 @@ h6 {
   display: flex;
   justify-content: center;
   align-items: center; }
+  .about-container .about-me-description {
+    padding: 0px 25px; }
 
-.about-me-description {
-  padding: 0px 25px; }
+/* Workspace Flat Section */
+.workspace-flat {
+  border-bottom: solid 20px #605866; }
+  .workspace-flat .workspace-flat-container {
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: -13px; }
 
 /*Skills Section*/
 .skills {
   width: 100%;
-  background-color: #7cb29b;
-  color: #fff; }
+  background-color: #7db29b;
+  color: #fff;
+  border-bottom: solid 5px #5e9e82; }
   .skills .columns {
     width: 70%;
     margin: 0 auto;
-    padding-top: 20px;
-    padding-bottom: 20px; }
+    padding: 50px 0px; }
   .skills h4 {
-    color: #5c8875;
+    color: #4f856d;
     font-size: 20px; }
   .skills p,
   .skills ul li {
@@ -2204,8 +2212,6 @@ h6 {
     list-style-type: square;
     font-size: 13px;
     font-weight: 600; }
-  .skills p strong {
-    color: #dddddd; }
 
 .skills-pic-container {
   position: relative; }
@@ -2247,7 +2253,7 @@ h6 {
 
 /*Experience Section*/
 .experience {
-  padding: 20px 0px;
+  padding: 50px 0px;
   width: 100%;
   background: #f5f5f5; }
   .experience .experience-container {
@@ -2256,7 +2262,9 @@ h6 {
 
 .experience-container > h2 {
   color: #e26867;
-  font-size: 25px; }
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 30px; }
 
 .timeline {
   position: relative;
@@ -2297,7 +2305,7 @@ h6 {
   left: 10px;
   border-radius: 41px; }
   .timeline-circle p {
-    color: white;
+    color: #fff;
     font-size: 10px;
     margin: 0;
     text-align: center; }
@@ -2331,7 +2339,7 @@ h6 {
     color: #e26867;
     font-size: 18px; }
   .experience .job-title a:hover {
-    color: #dc8988; }
+    color: #ea9392; }
 
 .timeline-content h3 {
   color: #737373;
@@ -2341,12 +2349,11 @@ h6 {
   margin-bottom: 10px; }
 
 .timeline-content p {
-  color: #949494;
+  color: #959595;
   font-size: 15px;
   margin-bottom: 15px; }
-
-.timeline-content strong {
-  color: #949494; }
+  .timeline-content p strong {
+    color: #959595; }
 
 .timeline-block.show {
   opacity: 1;
@@ -2385,20 +2392,19 @@ h6 {
 .specialization {
   width: 100%;
   background-color: #e26867;
-  min-height: 382px; }
+  padding: 50px 0px; }
 
 .specialization-container {
   width: 70%;
   margin: 0 auto;
-  padding-top: 20px;
-  padding-bottom: 20px;
   text-align: center; }
 
 .specialization .specialization-container h4 {
   color: #984342;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   text-align: center;
-  font-size: 25px; }
+  font-size: 35px;
+  font-weight: bold; }
 
 .specialization .specialization-container img {
   width: 150px;
@@ -2413,9 +2419,10 @@ h6 {
 
 .specialization .specialization-container h5 {
   color: #fff;
-  font-weight: bold; }
+  font-weight: bold;
+  margin-bottom: 10px; }
 
-.specialization .columns .column p {
+.specialization .columns .column li {
   color: #fff; }
 
 .specialization .columns .column h5,
@@ -2441,30 +2448,44 @@ h6 {
 /* Contact Section */
 .contact {
   width: 100%;
-  min-height: 260px;
+  min-height: 230px;
+  padding: 50px 0px;
   display: flex;
   align-items: center;
-  background-color: #446cb3; }
+  background-color: #e05b5a; }
   .contact .contact-container {
     width: 70%;
     margin: 0 auto;
     text-align: center; }
     .contact .contact-container h4 {
       text-transform: uppercase;
-      color: #244682;
+      color: #fff;
       margin: 0;
       margin-bottom: 30px;
-      font-size: 25px; }
+      font-size: 25px;
+      opacity: 0.8; }
     .contact .contact-container i {
-      font-size: 70px;
-      color: #244682;
-      transition: all 0.4s ease-in-out; }
+      font-size: 30px;
+      background-color: transparent;
+      color: #fff;
+      border: solid 2px #fff;
+      padding: 15px;
+      border-radius: 40px;
+      opacity: 0.8;
+      -webkit-transform: rotate(-360deg);
+      -moz-transform: rotate(-360deg);
+      -o-transform: rotate(-360deg);
+      -ms-transform: rotate(-360deg);
+      transform: rotate(-360deg);
+      transition: all 0.2s ease-in-out; }
     .contact .contact-container i:hover {
-      -webkit-transform: translateY(10px);
-      /* Ch <36, Saf 5.1+, iOS, An =<4.4.4 */
-      -ms-transform: translateY(10px);
-      /* IE 9 */
-      transform: translateY(10px); }
+      -webkit-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+      transform: rotate(360deg);
+      color: #e26867;
+      background-color: #fff; }
 
 @media only screen and (max-width: 1025px) {
   .about .lam-img {
@@ -2496,6 +2517,11 @@ h6 {
     width: 95%; }
   .about-container {
     flex-direction: column; }
+    .about-container .about-me-description {
+      padding: 0px;
+      padding-top: 25px; }
+  .workspace-flat .workspace-flat-container {
+    width: 100%; }
   .frameworks-tools ul {
     flex-basis: 50%; } }
 
@@ -2515,7 +2541,11 @@ h6 {
 @media only screen and (max-width: 450px) {
   .parallax h1 {
     font-size: 30px;
-    padding-top: 180px; } }
+    padding-top: 180px; }
+  .contact .contact-container {
+    width: 100%; }
+    .contact .contact-container i {
+      font-size: 20px; } }
 
 @media only screen and (max-width: 405px) {
   .nav-bar .nav-container {
