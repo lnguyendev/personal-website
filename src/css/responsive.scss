@@ -12,7 +12,9 @@
   }
 
   #all-skills {
-    display: block;
+    display: flex;
+    align-items: center;
+    height: 340px;
   }
 
   .nav-bar {
@@ -77,6 +79,10 @@
     .workspace-flat-container {
       width: 100%;
     }
+  }
+
+  #all-skills {
+    height: auto;
   }
 
   .frameworks-tools {

@@ -16,30 +16,30 @@ $(document).ready(function() {
 
   var aboutMeTop = $('section.about').offset().top;
 
-  $('img.element').each(function(i) {
+  $('i.element').each(function(i) {
     var myElement = $(this);
 
     switch (i) {
       case 0:
         myElement.data('params', {
           top0: 60,
-          x0: -100,
+          x0: -400,
           top1: $(this).css('top'),
           x1: $(this).css('left')
         });
         break;
       case 1:
         myElement.data('params', {
-          top0: -50,
-          x0: -80,
+          top0: -100,
+          x0: -380,
           top1: $(this).css('top'),
           x1: $(this).css('left')
         });
         break;
       case 2:
         myElement.data('params', {
-          top0: -500,
-          x0: 50,
+          top0: -700,
+          x0: -300,
           top1: $(this).css('bottom'),
           x1: $(this).css('left')
         });
@@ -74,7 +74,7 @@ $(document).ready(function() {
 
     /* Skills Animation part 2 */
 
-    var s_max = windowHeight / 3 + 1200;
+    var s_max = windowHeight / 3 + 1100;
 
     function move(p0, p1, s) {
       return Math.min(((-p0 + p1) / s_max) * s + p0, p1);
@@ -82,7 +82,7 @@ $(document).ready(function() {
 
     var scrollTop = parseInt($(window).scrollTop());
 
-    $('img.element').each(function(i) {
+    $('i.element').each(function(i) {
       var myX = move(
           $(this).data('params').x0,
           parseInt($(this).data('params').x1),
