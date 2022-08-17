@@ -31,7 +31,7 @@
         Hello, I'm <br />
         <span>Lam Nguyen</span>
       </h1>
-      <img class="flat-desk-img" src="src/img/flat-desk.png" />
+      <img class="flat-desk-img" src="<%=require('./src/img/flat-desk.png')%>" />
     </header>
 
     <nav class="nav-bar">
@@ -50,7 +50,7 @@
         <div class="about-container">
           <div class="lam-img-container">
             <div class="lam-img">
-              <img src="./src/img/profile-pic.jpg" alt="Lam Nguyen" />
+              <img src="<%=require('./src/img/profile-pic.jpg')%>" alt="Lam Nguyen" />
             </div>
           </div>
           <div class="about-me-description">
@@ -70,7 +70,11 @@
 
       <section class="workspace-flat">
         <div class="workspace-flat-container">
-          <img class="workspace-img" src="./src/img/workspace.png" alt="Workspace" />
+          <img
+            class="workspace-img"
+            src="<%=require('./src/img/workspace.png')%>"
+            alt="Workspace"
+          />
         </div>
       </section>
 
