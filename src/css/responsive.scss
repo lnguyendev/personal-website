@@ -110,6 +110,12 @@
     }
   }
 
+  .main-container {
+    &.with-margin-top {
+      margin-top: 100px;
+    }
+  }
+
   .frameworks-tools {
     ul {
       flex-basis: auto;

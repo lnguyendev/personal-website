@@ -1,38 +1,41 @@
 module.exports = {
   BannerAnimation: {
-    init: function(wScroll, options) {
+    init: function (wScroll, options) {
       var self = this;
 
-      this.headerBanner = $('header.workspace');
+      this.headerBanner = $("header.workspace");
       this.wScroll = wScroll;
 
-      options.forEach(function(option) {
+      options.forEach(function (option) {
         self.transform(option.element, option.number);
       });
     },
 
-    transform: function(element, number) {
+    transform: function (element, number) {
       this.headerBanner.find(element).css({
-        transform: 'translate(0px, ' + this.wScroll / number + '%)'
+        transform: "translate(0px, " + this.wScroll / number + "%)",
       });
-    }
+    },
   },
 
   StickyNav: {
-    init: function(wScroll, navOffset) {
-      this.navElement = $('nav.nav-bar');
+    init: function (wScroll, navOffset) {
+      this.navElement = $("nav.nav-bar");
+      this.mainElement = $("div.main-container");
       this.navOffset = navOffset;
       this.wScroll = wScroll;
 
       this.stickIt();
     },
 
-    stickIt: function() {
+    stickIt: function () {
       if (this.wScroll >= this.navOffset) {
-        this.navElement.addClass('nav-bar-fixed');
+        this.navElement.addClass("nav-bar-fixed");
+        this.mainElement.addClass("with-margin-top");
       } else {
-        this.navElement.removeClass('nav-bar-fixed');
+        this.navElement.removeClass("nav-bar-fixed");
+        this.mainElement.removeClass("with-margin-top");
       }
-    }
-  }
+    },
+  },
 };
